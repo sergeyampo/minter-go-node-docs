@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 0.15.0
-  title: Minter Node API
+  title: Minter Node APITransaction for sending coins to multiple addresses.
   contact:
     email: dl@minter.org
   license:
@@ -768,7 +768,8 @@ info:
     Type: **0x0D**
 
 
-    Transaction for sending coins to multiple addresses.
+    Transaction for sending coins to multiple addresses. 
+    *MultisendData can contain only 100 items. Therefore, this type of transaction has a limit of 100 recipent addresses.*
 
 
     *Data field contents:*
